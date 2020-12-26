@@ -57,6 +57,10 @@ body {
     text-shadow: 2px 2px 2px black;
 }
 
+.card-body {
+    padding: 1.2vw 0;
+}
+
 .card-text {
     font-size: 1.2vw;
 }

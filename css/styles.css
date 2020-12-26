@@ -11,7 +11,8 @@ body {
         rgb(22, 23, 26),
         rgb(47, 47, 51)
     );
-    font-family: bb, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Langar", cursive, bb, Cambria, Cochin, Georgia, Times,
+        "Times New Roman", serif;
     box-sizing: border-box;
 }
 
@@ -98,7 +99,7 @@ img:hover {
 }
 
 .zoom {
-    transition: transform 0.2s ease;
+    transition: transform 0.5s ease;
 }
 
 .zoom:hover {

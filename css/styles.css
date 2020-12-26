@@ -66,8 +66,8 @@ body {
     box-shadow: 2px 2px 2px black;
     width: 30%;
     margin: 0 auto;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .carousel-control-prev-icon {
@@ -149,6 +149,7 @@ a:active {
         z-index: 1;
     }
     .carousel-control-prev-icon {
+        display: inline;
         margin-right: auto;
     }
 
@@ -159,6 +160,7 @@ a:active {
     }
 
     .carousel-control-next-icon {
+        display: inline;
         margin-left: auto;
     }
 
@@ -172,6 +174,11 @@ a:active {
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 991px) {
+    .card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .card-title {
         font-size: 1.3vw;
     }

@@ -3,19 +3,23 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>My Shows</title>
+    <title>Chill Pill</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
        
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" type="text/css"/> 
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <div class = "heading">
         <h1>Chill Pill</h1>
+        <div class="search">
+            <input type="text" oninput="searchRecommendation()" id="myInput" class= "searchBox" placeholder="Search">
+            <div id = "suggestBox"></div>
+        </div>
     </div>
 
     <div class="subheading">
@@ -27,11 +31,11 @@
             <div class="carousel-item active">
                 <div class="card-group">
                     <div class="row">                
-                        <div class="card text-white bg-dark mb-3 col-4 ">
+                        <div class="card text-white mb-3 col-4 zoom">
                             <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
                                 <h5 class="card-title">Dark</h5>
                                 <div class="showPoster">
-                                    <img src="images/DarkPoster.jpg" class="card-img-top zoom" alt="...">
+                                    <img src="images/DarkPoster.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body showInfo">                        
                                     <p class="card-text">When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids. </p>                        
@@ -39,22 +43,22 @@
                             </a> 
                         </div>  
                     
-                        <div class="card text-white bg-dark mb-3 col-4 ">
+                        <div class="card text-white mb-3 col-4 zoom">
                             <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
                                 <h5 class="card-title">Mr Robot</h5>
                                 <div class="showPoster">
-                                    <img src="images/MrRobotPoster.jpg" class="card-img-top zoom" alt="...">
+                                    <img src="images/MrRobotPoster.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body showInfo">                        
                                     <p class="card-text">Elliot, a cyber-security engineer suffering from anxiety, works for a corporation and hacks felons by night. Panic strikes him after Mr Robot, a cryptic anarchist, recruits him to ruin his company. </p>                        
                                 </div>
                             </a> 
                         </div> 
-                        <div class="card text-white bg-dark mb-3 col-4 ">
+                        <div class="card text-white  mb-3 col-4 zoom">
                             <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
                                 <h5 class="card-title">The Sinner</h5>
                                 <div class="showPoster">
-                                    <img src="images/TheSinnerS3Poster .jpg" class="card-img-top zoom" alt="...">
+                                    <img src="images/TheSinnerS3Poster .jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body showInfo">                        
                                     <p class="card-text">Detective Harry Ambrose investigates various atrocious murder cases and tries to analyse the reasons behind ordinary people committing heinous crimes.</p>                        
@@ -68,11 +72,11 @@
             <div class="carousel-item ">
                 <div class="card-group">
                     <div class="row">                
-                        <div class="card text-white bg-dark mb-3 col-4 ">
+                        <div class="card text-white  mb-3 col-4 zoom">
                             <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
                                 <h5 class="card-title">The End of the Fucking World</h5>
                                 <div class="showPoster">
-                                    <img src="images/TEFWPoster.jpg" class="card-img-top zoom" alt="...">
+                                    <img src="images/TEFWPoster.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body showInfo">                        
                                     <p class="card-text">`The End of the F...ing World' sees two 17-year-old outsiders, James and Alyssa, embark on a road trip to find Alyssa's estranged father, who left home when she was just a child. James, who's pretty convinced he's a psychopath, has decided it's time to graduate from killing animals to something bigger, and he's already got a target in mind. Alyssa, the embodiment of existential angst, feels like she doesn't fit in at her new school despite being quite popular. Together, they get caught up on a trail of violent events that grow increasingly more ominous as their quest progresses </p>                        
@@ -80,22 +84,22 @@
                             </a> 
                         </div>  
                     
-                        <div class="card text-white bg-dark mb-3 col-4 ">
+                        <div class="card text-white  mb-3 col-4 zoom">
                             <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
                                 <h5 class="card-title">The Boondocks</h5>
                                 <div class="showPoster">
-                                    <img src="images/TheBoondocksPoster.jpg" class="card-img-top zoom" alt="...">
+                                    <img src="images/TheBoondocksPoster.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body showInfo">                        
                                     <p class="card-text">Cantankerous Robert "Granddad" Freeman is the legal guardian of his grandsons, 10-year-old revolutionary Huey and 8-year-old Riley, a product of contemporary rap culture. After moving the family from Chicago's South Side to the safety of suburban Woodcrest -- aka the boondocks -- Granddad hopes to ignore the grandkids and enjoy his golden years in peace. But the kids have different plans, torturing each other and provoking others in the neighborhood. No matter how wild they get, Huey and Riley are no match for the eccentric elderly man.</p>                        
                                 </div>
                             </a> 
                         </div> 
-                        <div class="card text-white bg-dark mb-3 col-4 ">
+                        <div class="card text-white  mb-3 col-4 zoom">
                             <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
                                 <h5 class="card-title">Brooklyn Nine-Nine</h5>
                                 <div class="showPoster">
-                                    <img src="images/b99Poster.jpg" class="card-img-top zoom" alt="...">
+                                    <img src="images/b99Poster.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body">                        
                                     <p class="card-text">Ray Holt, an eccentric commanding officer, and his diverse and quirky team of odd detectives solve crimes in Brooklyn, New York City.</p>                        
@@ -134,40 +138,41 @@
                 <div class="carousel-item active">
                     <div class="card-group">
                         <div class="row">                
-                            <div class="card text-white bg-dark mb-3 col-4 ">
-                                <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
-                                    <h5 class="card-title">Dark</h5>
-                                    <div class="showPoster">
-                                        <img src="images/DarkPoster.jpg" class="card-img-top zoom" alt="...">
-                                    </div>
-                                    <div class="card-body showInfo">                        
-                                        <p class="card-text">When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids. </p>                        
-                                    </div>
-                                </a> 
-                            </div>  
+                            
                         
-                            <div class="card text-white bg-dark mb-3 col-4 ">
+                            <div class="card text-white  mb-3 col-4 zoom">
                                 <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
-                                    <h5 class="card-title">Mr Robot</h5>
+                                    <h5 class="card-title">Sicario</h5>
                                     <div class="showPoster">
-                                        <img src="images/MrRobotPoster.jpg" class="card-img-top zoom" alt="...">
+                                        <img src="images/SicarioPoster.jpg" class="card-img-top" alt="...">
                                     </div>
                                     <div class="card-body showInfo">                        
-                                        <p class="card-text">Elliot, a cyber-security engineer suffering from anxiety, works for a corporation and hacks felons by night. Panic strikes him after Mr Robot, a cryptic anarchist, recruits him to ruin his company. </p>                        
+                                        <p class="card-text">During a dangerous mission to stop a drug cartel operating between the US and Mexico, Kate Macer, an FBI agent, is exposed to some harsh realities.</p>                        
                                     </div>
                                 </a> 
                             </div> 
-                            <div class="card text-white bg-dark mb-3 col-4 ">
+                            <div class="card text-white  mb-3 col-4 zoom">
                                 <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
-                                    <h5 class="card-title">The Sinner</h5>
+                                    <h5 class="card-title">Blade Runner 2049</h5>
                                     <div class="showPoster">
-                                        <img src="images/TheSinnerS3Poster .jpg" class="card-img-top zoom" alt="...">
+                                        <img src="images/BR2049Poster.jpg" class="card-img-top" alt="...">
                                     </div>
                                     <div class="card-body showInfo">                        
-                                        <p class="card-text">Detective Harry Ambrose investigates various atrocious murder cases and tries to analyse the reasons behind ordinary people committing heinous crimes.</p>                        
+                                        <p class="card-text">K, an officer with the Los Angeles Police Department, unearths a secret that could cause chaos. He goes in search of a former blade runner who has been missing for three decades.</p>                        
                                     </div>
                                 </a> 
-                            </div>    
+                            </div>  
+                            <div class="card text-white mb-3 col-4 zoom">
+                                <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
+                                    <h5 class="card-title">Se7en</h5>
+                                    <div class="showPoster">
+                                        <img src="images/sevenPoster.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body showInfo">                        
+                                        <p class="card-text">A serial killer begins murdering people according to the seven deadly sins. Two detectives, one new to the city and the other about to retire, are tasked with apprehending the criminal.</p>                        
+                                    </div>
+                                </a> 
+                            </div>   
                         </div>                        
                     </div>
                 </div>                   
@@ -175,40 +180,41 @@
                 <div class="carousel-item ">
                     <div class="card-group">
                         <div class="row">                
-                            <div class="card text-white bg-dark mb-3 col-4 ">
-                                <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
-                                    <h5 class="card-title">Dark</h5>
-                                    <div class="showPoster">
-                                        <img src="images/DarkPoster.jpg" class="card-img-top zoom" alt="...">
-                                    </div>
-                                    <div class="card-body showInfo">                        
-                                        <p class="card-text">When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids. </p>                        
-                                    </div>
-                                </a> 
-                            </div>  
+                              
                         
-                            <div class="card text-white bg-dark mb-3 col-4 ">
+                            <div class="card text-white mb-3 col-4 zoom" id="card">
                                 <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
-                                    <h5 class="card-title">Mr Robot</h5>
+                                    <h5 class="card-title">Shawshank Redemption</h5>
                                     <div class="showPoster">
-                                        <img src="images/MrRobotPoster.jpg" class="card-img-top zoom" alt="...">
+                                        <img src="images/Shawshank.jpg" class="card-img-top" alt="...">
                                     </div>
                                     <div class="card-body showInfo">                        
-                                        <p class="card-text">Elliot, a cyber-security engineer suffering from anxiety, works for a corporation and hacks felons by night. Panic strikes him after Mr Robot, a cryptic anarchist, recruits him to ruin his company. </p>                        
+                                        <p class="card-text">Andy Dufresne, a successful banker, is arrested for the murders of his wife and her lover, and is sentenced to life imprisonment at the Shawshank prison. He becomes the most unconventional prisoner.</p>                        
                                     </div>
                                 </a> 
                             </div> 
-                            <div class="card text-white bg-dark mb-3 col-4 ">
+                            <div class="card text-white mb-3 col-4 zoom">
                                 <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
-                                    <h5 class="card-title">The Sinner</h5>
+                                    <h5 class="card-title">Forrest Gump</h5>
                                     <div class="showPoster">
-                                        <img src="images/TheSinnerS3Poster .jpg" class="card-img-top zoom" alt="...">
+                                        <img src="images/FGPoster.jpg" class="card-img-top" alt="...">
                                     </div>
                                     <div class="card-body showInfo">                        
-                                        <p class="card-text">Detective Harry Ambrose investigates various atrocious murder cases and tries to analyse the reasons behind ordinary people committing heinous crimes.</p>                        
+                                        <p class="card-text">Forrest, a man with low IQ, recounts the early years of his life when he found himself in the middle of key historical events. All he wants now is to be reunited with his childhood sweetheart, Jenny.</p>                        
                                     </div>
                                 </a> 
-                            </div>    
+                            </div> 
+                            <div class="card text-white mb-3 col-4 zoom">
+                                <a href="https://www.w3schools.com/css/css3_fonts.asp" class="hyperlink">
+                                    <h5 class="card-title">Arrival</h5>
+                                    <div class="showPoster">
+                                        <img src="images/ArrivalPoster.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body showInfo">                        
+                                        <p class="card-text">Louise Banks, a linguistics expert, along with her team, must interpret the language of aliens who've come to earth in a mysterious spaceship.</p>                        
+                                    </div>
+                                </a> 
+                            </div>   
                         </div>                        
                     </div>
                 </div>                   

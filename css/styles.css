@@ -31,9 +31,36 @@ body {
 }
 
 .heading h1 {
-    text-align: center;
+    text-align: left;
     text-shadow: 2px 2px 2px black;
     color: white;
+    display: inline;
+}
+
+.search {
+    display: inline;
+    float: right;
+    display: none;
+}
+
+.searchBox {
+    border-radius: 1rem;
+    font-size: 25px;
+    background-image: url("../images/loupe.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#suggestBox {
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    display: none;
+}
+
+#suggestBox:hover {
+    background-color: rgb(201, 194, 194);
 }
 
 .subheading {
@@ -73,6 +100,12 @@ body {
     margin: 0 auto;
     margin-left: 5px;
     margin-right: 5px;
+    background-color: rgb(33, 37, 41);
+    overflow: hidden;
+}
+
+.card:nth-child(n):hover {
+    background-color: rgb(150, 46, 46);
 }
 
 .carousel-control-prev-icon {
@@ -89,20 +122,14 @@ body {
     width: 100%;
 }
 
-img {
+.zoom img {
     height: auto;
     overflow: hidden;
-}
-
-img:hover {
-    opacity: 0.5;
-}
-
-.zoom {
     transition: transform 0.5s ease;
 }
 
-.zoom:hover {
+.zoom :hover img {
+    opacity: 0.5;
     transform: scale(1.1);
 }
 
@@ -133,6 +160,10 @@ a:active {
 /* desktop */
 
 @media (min-width: 992px) {
+    .search {
+        display: inline;
+    }
+
     .carousel-inner {
         padding-left: 5vw;
     }
@@ -179,6 +210,9 @@ a:active {
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 991px) {
+    .carousel-inner {
+        padding-left: 2.5vw;
+    }
     .card {
         margin-left: 10px;
         margin-right: 10px;

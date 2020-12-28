@@ -38,9 +38,8 @@ body {
 }
 
 .search {
-    display: inline;
-    float: right;
     display: none;
+    float: right;
 }
 
 .searchBox {
@@ -215,6 +214,9 @@ body {
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 991px) {
+    .search {
+        display: inline;
+    }
     .carousel-inner {
         padding-left: 2.5vw;
     }
